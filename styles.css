@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Reset list styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;  /* Center align the navigation */
+}
+
+/* Style for each navigation item */
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Style for navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;  /* Make the text larger */
+    font-weight: bold;
+    padding: 10px 20px;  /* Add padding to make links bigger */
+    display: inline-block;
+    border-radius: 5px;  /* Rounded corners */
+    transition: all 0.3s ease;  /* Smooth transition on hover */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #007BFF;  /* Add background color on hover */
+    color: white;  /* Change text color to white */
+    transform: scale(1.1);  /* Slightly enlarge the link on hover */
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #f3f3f3, #f7d9e3);
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+
+.product p {
+    font-size: 0.9em;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Form */
+.feedback-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #d14a8c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Rating section - updated styles */
+.rating {
+    display: flex;
+
+    gap: 15px; /* Space between radio buttons and labels */
+    margin-bottom: 15px;
+}
+
+.rating input {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+.rating label {
+    font-size: 16px;
+    color: #333;
+}

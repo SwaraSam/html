@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feedback Form</title>
+</head>
+<style>
+    main{
+        margin-top: 20px;
+    }
+    
+    nav {
+           background-color: pink;
+           padding: 10px;
+           text-align: center;
+       }
+
+       nav a {
+           margin: 0 15px;
+           text-decoration: none;
+           color: white;
+           font-weight: bold;
+           font-size: 16px; /* Initial font size */
+           position: relative; /* To ensure the pop-up effect works correctly */
+           transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+       }
+
+       nav a:hover {
+           transform: scale(1.1); /* Slightly enlarge the item */
+           color: hotpink; /* Hot pink color */
+           font-size: 20px; /* Increase font size */
+       }
+       .product-grid {
+       margin-top: 20px; /* Adds space above the product cards (optional) */
+       main{
+        margin-top: 20px;
+    }
+   }
+</style>
+<body>
+    <header>
+        <h1>Your Feedback Matters</h1>
+        <p>Please share your thoughts about the product.</p>
+    </header>
+    <nav style="background-color: pink; padding: 10px; text-align: center;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <form class="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Rating Section -->
+            <label for="rating">Rate the Product:</label>
+            <div id="rating">
+                <input type="radio" id="rating1" name="rating" value="1" required>Excellent<label for="rating1">1</label>
+                <input type="radio" id="rating2" name="rating" value="2">Satisfactory<label for="rating2">2</label>
+                <input type="radio" id="rating3" name="rating" value="3">Average<label for="rating3">3</label>
+                <input type="radio" id="rating4" name="rating" value="4">Un-satisfactory<label for="rating4">4</label>
+                <input type="radio" id="rating5" name="rating" value="5">Poor<label for="rating5">5</label>
+            </div>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
